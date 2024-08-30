@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: 'Kufam', sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #1D7F37; /* glumos logo color */
+    margin: 0;
+}
+
+.navigation a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.signup-btn {
+    background-color: #38A7A7;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #ffffff;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    margin-top: 18%;
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 300px;
+}
+
+.search-bar select {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+}
+
+.search-bar button {
+    background-color: #38A7A7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 60%;
+    margin-left: 25%;
+    height: auto;
+    position: relative; 
+    display: block;
+}
+/* Job Filters Section */
+.job-filters {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.filter-section {
+    margin-top: 8% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-section h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filter-section select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-btn {
+    background-color: #38A7A7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Job Listings Section */
+.job-listings {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.job-listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* adjust the number of columns here */
+    gap: 20px;
+  }
+
+.job-listings h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color:  #000000;
+    text-align: center;
+}
+
+.job-listing {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.job-listing h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-listing p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.apply-btn {
+    background-color: #38A7A7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.job-listings > .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* adjust the number of columns here */
+    gap: 20px;
+  }
+  .pagination {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 50px; /* increased border radius to match your website's style */
+  padding: 10px; /* added padding to match your website's style */
+  background-color: #f7f7f7;
+  padding: 10px;
+  width: 200%; 
+  margin-left: 20%;
+  margin-right: 20%;/* added background color to match your website's style */
+}
+
+.pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* change to flexbox */
+    flex-wrap: wrap; /* allow wrapping to next line */
+    justify-content: center; /* center the pagination */
+  }
+  
+  .pagination li {
+    margin-right: 10px;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    color: #337ab7;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    width: 20px; /* set a fixed width for each pagination link */
+    text-align: center; /* center the text */
+  }
+
+.pagination a.active {
+  color: #23527c;
+  font-weight: bold;
+  background-color: #38A7A7; /* changed background color to match your website's style */
+  border-color: #38A7A7; /* changed border color to match your website's style */
+}
+
+.pagination a:hover {
+  color: #337ab7;
+  background-color: #f5f5f5; /* added background color on hover to match your website's style */
+  border-color: #ddd; /* added border color on hover to match your website's style */
+}
+.footer {
+    background-color:  #38A7A7;
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    color: #1D7F37;
+    margin: 0;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-nav li {
+    margin-right: 20px;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+
+  
+  .footer-copyright {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+  }
+  .footer-contact {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
