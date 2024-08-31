@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Kufam', sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container1 {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #1D7F37; /* glumos logo color */
+    margin: 0;
+}
+
+.navigation a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 80vh; /* adjust the height to 80% of the viewport height */
+  }
+  .image-section {
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+  
+  .form-section {
+    width: 28%;
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+    0 0 10px rgb(70, 139, 176), 
+    0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .form-section .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section label {
+    margin-bottom: 10px;
+  }
+  
+  .form-section input[type="email"],
+  .form-section input[type="text"],
+  .form-section input[type="password"],
+  .form-section select {
+    width: 75%;
+    height: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #c6c2c290;
+    border-radius: 10px;
+  }
+  
+  .form-section button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4cafac;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-section button[type="submit"]:hover {
+    background-color: #2098a8;
+  }
+  .footer {
+    background-color:  #38A7A7;
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    color: #1D7F37;
+    margin: 0;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-nav li {
+    margin-right: 20px;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+
+  
+  .footer-copyright {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+  }
+  .footer-contact {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.link-next{
+    font-size: 14px;
+    color: #666;
+    margin-top: 13px;
+    
+  }
+  .link-next a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .link-next a:hover {
+    color: #23527c;
+  }
+
