@@ -39,7 +39,9 @@ body {
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
+    transition: background-color 2s ease-in-out 0.5s;
 }
+ 
 
 .hero {
     background-color: #ffffff;
@@ -99,6 +101,7 @@ body {
     border-radius: 50px;
     margin-left: 10px;
     cursor: pointer;
+    transition: background-color 2s ease-in-out 0.5s;
 }
 
 .hero-image img {
@@ -142,6 +145,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 2s ease-in-out 0.5s;
 }
 
 /* Job Listings Section */
@@ -189,6 +193,7 @@ body {
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+    transition: background-color 2s ease-in-out 0.5s;
 }
 .job-listings > .container {
     display: grid;
