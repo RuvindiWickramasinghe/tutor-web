@@ -101,7 +101,7 @@ body {
   .form-section button[type="submit"] {
     width: 100%;
     height: 40px;
-    background-color: #4cafac;
+    background-color: #ff620e;
     color: #fff;
     padding: 10px;
     border: none;
@@ -110,10 +110,10 @@ body {
   }
   
   .form-section button[type="submit"]:hover {
-    background-color: #2098a8;
+    background-color: #ff620e;
   }
   .footer {
-    background-color:  #38A7A7;
+    background-color:  #ff620e;
     padding: 20px 0;
     border-top: 1px solid #e5e5e5;
     margin-top: 20px;
