@@ -58,7 +58,7 @@ body {
 }
 
 .hero-text {
-    margin-top: 7%;
+    margin-top: 0%;
     max-width: 50%;
 }
 
@@ -88,7 +88,7 @@ body {
     outline: none;
     padding: 10px;
     border-radius: 50px;
-    width: 300px;
+    width: 500px;
 }
 
 .search-bar select {
@@ -111,8 +111,8 @@ body {
 }
 
 .hero-image img {
-    max-width: 60%;
-    margin-left: 25%;
+    max-width: 140%;
+    margin-left: -10%;
     height: auto;
     position: relative; 
     display: block;
@@ -287,7 +287,7 @@ body {
     margin-right: 20px;
   }
   
-  .footer-nav a {
+  .footer-nav {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
