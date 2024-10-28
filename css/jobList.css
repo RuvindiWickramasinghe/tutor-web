@@ -22,22 +22,16 @@ body {
 .logo h1 {
     font-size: 35px;
     color: #1c1c1c;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
-.sub-head p {
-    font-size: 10px;
-    color: #1c1c1c;
-    margin-top: 0; 
-  
-}
+
 .navigation a {
     margin-left: 40px;
     text-decoration: none;
     color: #fff;
     font-size: 16px;
 }
-
 
 .signup-btn {
     background-color: #ff620e;               
@@ -47,121 +41,9 @@ body {
     text-decoration: none;
     transition: background-color 2s ease-in-out 0.5s;
 }
- 
 
-.hero {
-    background-color: #ffffff;
-    padding: 60px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.hero-text {
-    margin-top: 0%;
-    max-width: 50%;
-}
-
-.hero-text h2 {
-    font-size: 33px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #666;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.search-bar input[type="text"] {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 50px;
-    width: 500px;
-}
-
-.search-bar select {
-    margin-left: 10px;
-    padding: 10px;
-    border: none;
-    background-color: #f5f5f5;
-    border-radius: 50px;
-}
-
-.search-bar button {
-    background-color: #ff620e;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 2s ease-in-out 0.5s;
-}
-.hero-image {
-    width: 80%;
-    margin-right: -20px;
-}
-.hero-image img {
-    width: 150%;
-    height: 100%;
-    margin-left: -10%;
-    margin-top: -10%;
-    height: auto;
-    position: relative; 
-    display: block;
-}
-/* Job Filters Section */
-.job-filters {
-    background-color: #f7f7f7;
-    padding: 20px 10px;
-    margin-top: 30px;
-}
-
-.filter-section {
-    margin-top: 5% ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 20px;
-}
-
-.filter-section h3 {
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.filter-section select {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.filter-btn {
-    background-color: #ff620e;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 2s ease-in-out 0.5s;
-}
-
-/* Job Listings Section */
-.job-listings {
+ .job-listings {
     background-color: #f9f9f9;
     padding: 40px 0;
 }
@@ -249,7 +131,7 @@ body {
   }
 
 .pagination a.active {
-  color: #e9f5ff;
+  color: #ffffff;
   font-weight: lighter;
   background-color: #ff620e; /* changed background color to match your website's style */
   border-color: #ff620e; /* changed border color to match your website's style */

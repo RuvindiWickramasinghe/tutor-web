@@ -29,8 +29,16 @@ body {
 .navigation a {
     margin-left: 40px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 16px;
+}
+.signup-btn {
+  background-color: #ff620e;               
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 2s ease-in-out 0.5s;
 }
 .container2 {
     display: flex;
@@ -39,16 +47,17 @@ body {
     padding: 40px;
     margin: 0 auto;
     max-width: 1200px;
-    min-height: 80vh; /* adjust the height to 80% of the viewport height */
+    min-height: 80vh; 
   }
   .image-section {
-    width: 50%;
+    width: 60%;
     margin-right: 20px;
   }
   
   .image-section img {
-    width: 100%;
+    width: 125%;
     height: 100%;
+    margin-left: -50px;
     object-fit: cover;
     border-radius: 10px;
     
@@ -58,6 +67,7 @@ body {
     width: 28%;
     background-color: #ffffff;
     padding: 40px;
+    margin-top: -20px;
     border: 1px solid #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

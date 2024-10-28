@@ -15,3 +15,4 @@ $(document).ready(function() {
     // For demonstration purposes, just console.log the page number
     console.log('Loading page ' + pageNumber);
   }
+  
