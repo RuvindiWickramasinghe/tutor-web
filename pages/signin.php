@@ -1,68 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - TMMS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="siginIn.css">
-    
-</head>
-<body>
-    <header class="header">
-        <div class="container1">
-            <h1 class="logo">TMMS</h1>
-            <nav class="navigation">
-                <a href="index.html" class="signup-btn">Home</a>
-            </nav>
-        </div>
-    </header>
-    <div class="container2 ">
-        <div class="image-section">
-            <img src="Signin_Lady.png" alt="Welcome Image">
-        </div>
-        <div class="form-section">
-            <div class="logo">TMMS</div>
-            <h2>Welcome back!</h2>
-            <form action="register.php" method="post">
-                <label for="role">Select Role</label>
-                <select id="role" name="role" required>
-                    <option value="">Select your role</option>
-                    <option value="admin">Admin</option>
-                    <option value="user">User</option>
-                    <option value="guest">Guest</option>
-                </select>
+<<?php
+// Include database connection
+require_once 'connect.php';
 
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+session_start();
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $role = $_POST['role'];
 
-                <button type="submit">Sign In</button>
-                <p class="link-next">Don't have an account? <a href="signup.html">Sign up here</a></p>
-            </form>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="logoo.png" alt="Logo Image">
-            </div>
-            <nav class="footer-nav">
-                <ul>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <div class="footer-contact">
-                <p>Phone:(+94) 011 2881 000</p>
-                <p>Email: info@ou.ac.lk</p>
-                <p>Address: PO Box 21, The Open University of Sri Lanka, Nawala, Nugegoda.</p>
-            </div>
-        </div>
-    </footer>
-    
-</body>
-</html>
+    // Prepare SQL query to fetch the user details based on username and role
+    $stmt = $conn->prepare("SELECT id, password FROM users WHERE email = ? AND role = ?");
+    $stmt->bind_param("ss", $username, $role);
+    $stmt->execute();
+    $stmt->store_result();
+
+    // Check if user exists
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($userId, $hashedPassword);
+        $stmt->fetch();
+
+        // Verify password
+        if (password_verify($password, $hashedPassword)) {
+            // Password is correct, set session variables
+            $_SESSION['user_id'] = $userId;
+            $_SESSION['username'] = $username;
+            $_SESSION['role'] = $role;
+
+            echo "<p style='color:green;'>Sign-in successful! Welcome, $username.</p>";
+            // Redirect or load the dashboard for the specific role
+            header("Location: dashboard.php");
+            exit;
+        } else {
+            echo "<p style='color:red;'>Invalid password.</p>";
+        }
+    } else {
+        echo "<p style='color:red;'>No account found with the provided username and role.</p>";
+    }
+
+    // Close the statement and connection
+    $stmt->close();
+    $conn->close();
+}
+?>
