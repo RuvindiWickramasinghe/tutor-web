@@ -21,7 +21,7 @@ body {
 
 .logo {
     font-size: 24px;
-    color: #1D7F37; /* glumos logo color */
+    color: #510505; /* glumos logo color */
     margin: 0;
 }
 
@@ -34,7 +34,7 @@ body {
 
 
 .signup-btn {
-    background-color: #38A7A7;
+    background-color: #a74c38;
     padding: 10px 20px;
     color: #fff;
     border-radius: 20px;
@@ -94,7 +94,7 @@ body {
 }
 
 .search-bar button {
-    background-color: #38A7A7;
+    background-color: #a74c38;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -139,7 +139,7 @@ body {
 }
 
 .filter-btn {
-    background-color: #38A7A7;
+    background-color: #a74c38;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -186,7 +186,7 @@ body {
 }
 
 .apply-btn {
-    background-color: #38A7A7;
+    background-color: #a74c38;
     color: #fff;
     padding: 10px 20px;
     border-radius: 20px;
@@ -239,8 +239,8 @@ body {
 .pagination a.active {
   color: #23527c;
   font-weight: bold;
-  background-color: #38A7A7; /* changed background color to match your website's style */
-  border-color: #38A7A7; /* changed border color to match your website's style */
+  background-color: #a74c38; /* changed background color to match your website's style */
+  border-color: #a74c38; /* changed border color to match your website's style */
 }
 
 .pagination a:hover {
@@ -249,7 +249,7 @@ body {
   border-color: #ddd; /* added border color on hover to match your website's style */
 }
 .footer {
-    background-color:  #38A7A7;
+    background-color:  #a74c38;
     padding: 20px 0;
     border-top: 1px solid #e5e5e5;
     margin-top: 20px;
